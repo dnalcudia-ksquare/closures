@@ -22,7 +22,7 @@ it works, in this case changes in scope or hoisting do not influence the behavio
 ## Scope chain, an example of it, how many closures can we nest  is infinite as long as the correct structure of the closure is followed.
 	const add = (function () {
 	let counter = 0;
-	return function () {counter += 1; return function() {counter+=1; return function() 			{counter+=1; return counter;}}}
+	return function () {counter += 1; return function() {counter+=1; return function(){counter+=1; return counter;}}}
 	})();
 	function myFunction(){
 	  document.getElementById("demo").innerHTML = add()()();
