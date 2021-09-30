@@ -66,6 +66,7 @@ If we create another instance of the closure we now have two variables count = 0
 
 ## How can we add more functions as a decrement counter? Give an example of it. 
 Adding "methods and attributes" similar to those of a class. Something like the example I put on data privacy.
+
 function counter() {
  var count = 0
 
